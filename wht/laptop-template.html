@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBay Listing Template</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    .body {
+        font-family: 'Lato', sans-serif;
+        background-color: #e5e5f7;
+        background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+        background-size: 10px 10px;
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        border: 5px solid rgba(91, 24, 6, 0.603);
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f76941;
+        padding: 10px;
+    }
+    .logo img {
+        height: 100px; /* Adjust the height as needed */
+    }
+    .nav-links {
+        display: flex;
+        gap: 10px;
+    }
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        padding: 0 10px;
+    }
+    .search-bar {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .search-bar input {
+        padding: 5px;
+    }
+    .main-content {
+        display: flex;
+    }
+    .categories-panel {
+        width: 200px;
+        background-color: #f8f8f8;
+        border-right: 1px solid #ddd;
+    }
+    .categories-panel ul {
+        list-style-type: circle;
+        list-style-position: inside;
+        padding: 0;
+        top: 0%;
+    }
+    .categories-panel li {
+        margin: 10px 0;
+        padding: 10px;
+        border-left: 3px solid transparent;
+        line-height: 1.0;
+        background: #EAEFF3;
+
+    }
+    .categories-banner {
+        padding: 15px;
+        background-color: #2B2D42;
+        color: white;
+        text-align: center;
+        margin: 0;
+
+    }
+    .categories-panel a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    .categories-panel a:hover {
+        color: #007bff;
+    }
+    .listing-content {
+        flex-grow: 1;
+    }
+    .banner {
+        background-color: #F54514;
+        text-align: center;
+        margin: 0;
+        padding: 15px;
+        color: white;
+    }
+    .section {
+        margin: 20px 0;
+    }
+    .specs table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .specs th, .specs td {
+        color: #596773;
+        text-align: left;
+        background: #F3F7FA;
+        font-family:'Lato', sans-serif;
+        border-bottom: 3px solid #FFF;
+        padding: 5px 8px;
+    }
+    .specs th {
+        font-weight: 500;
+        width: 25%;
+        background: #EAEFF3;
+        border-right: 3px solid #FFF;
+    }
+    .footer {
+        background-color: #f76941;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer-li {
+        display:flex;
+        align-items: center;
+        padding: 10px;
+        justify-content: space-between;
+    }
+    .footer-li li {
+        padding: 20px;
+        list-style-position: inside;
+    }
+    </style>    
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="https://i.imgur.com/BbC1pQp.png" alt="We Handle Tech logo">
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Categories</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="categories-panel">
+                <h4 class="categories-banner">Shop Categories</h4>
+                <ul>
+                    <li><a href="#audio-video">Laptops</a></li>
+                    <li><a href="#computers-laptops">Desktops</a></li>
+                    <li><a href="#computer-components">Mobile</a></li>
+                    <li><a href="#pc-accessories">Components</a></li>
+                    <li><a href="#networking">Miscellaneous</a></li>
+                </ul>
+            </div>
+            <div class="listing-content">
+                <div class="banner">
+                    <h4 style="margin: 0;">Product Description</h3>
+                </div>
+                <div class="section content">
+                    <h1 style="font-family:'Lato',sans-serif">[TagBot!Title  =]</h1>
+                    <p style="font-family:'Lato',sans-serif">[TagBot!Description =]</pp>
+                    <div class="specs">
+                        <h4>Specifications</h4>
+                        <table cellpadding="0" cellspacing="0">
+                            <tr><th>CPU</th>	<td>[TagBot!CPU  =]</td></tr>
+                            <tr><th>Memory</th>	<td>[TagBot!Memory  =]</td></tr>
+                            <tr><th>Storage</th>	<td>[TagBot!Storage  =]</td></tr>
+                            <tr><th>Battery</th>	<td>[TagBot!Battery  =]</td></tr>
+                            <tr><th>Screen Size</th>	<td>[TagBot!ScreenSize  =]</td></tr>
+                            <tr><th>Graphics Processing</th>	<td>[TagBot!Graphics Processing  =]</td></tr>
+                            <tr><th>Webcam</th>	<td>[TagBot!Webcam  =]</tr>
+                            <tr><th>A/C Adapter</th>	<td>[TagBot!A/C Adapter  =]</tr>				
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="footer-li">
+                <li>Shop with Us</li>
+                <li>View Our Feedback</li>
+                <li>Contact Us</li>
+                <li>Visit Our Website</li>
+            </ul>
+            <div class="logo">
+                <img src="https://i.imgur.com/BbC1pQp.png" alt="We Handle Tech logo">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
